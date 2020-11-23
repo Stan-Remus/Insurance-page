@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 0.25fr 2fr 4fr 0.3fr 0.7fr;
+    grid-template-columns: 0.25fr 1fr 0.5fr 0.5fr 1fr 0.5fr 1fr 0.25fr;
+    grid-template-areas: 
+    "na nav nav nav nav nav nav na"
+    "na head-text head-text head-text head-img head-img head-img na"
+    "na main-text1 main-text1 main-text2 main-text2 main-text3 main-text3 na"
+    "na footer-top footer-top footer-top footer-top footer-top footer-top na"
+    "na footer-text1 footer-text2 footer-text2 footer-text3 footer-text3 footer-text4 na"
+    ;
+}
+.nav{
+    background-color: orange;
+    grid-area: nav;
+}
+.head{
+    background-color: 	#2d2640;
+}
+.head-text{
+    grid-area: head-text;
+    background-color: 	#2d2640;
+
+}
+.head-img{
+    grid-area: head-img;
+    background-color: 	#2d2640;
+
+}
+.main{
+    background-color: white;
+}
+.main-text1{
+    grid-area: main-text1;
+}
+.main-text2{
+    grid-area: main-text2;
+}
+.main-text3{
+    grid-area: main-text3;
+}
+.footer{
+    background-color: 	#fafafa;
+}
+.footer-top{
+    grid-area: footer-top;
+    background-color: 	#fafafa;
+}
+.footer-text1{
+    grid-area: footer-text1;
+    background-color: 	#fafafa;
+}
+.footer-text2{
+    grid-area: footer-text2;
+    background-color: 	#fafafa;
+}
+.footer-text3{
+    grid-area: footer-text3;
+    background-color: 	#fafafa;
+}
+.footer-text4{
+    grid-area: footer-text4;
+    background-color: 	#fafafa;
+}
+.na{
+    grid-area: na; 
+}
