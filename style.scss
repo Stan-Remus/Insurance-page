@@ -116,6 +116,7 @@ body{
         flex-direction: column;
         grid-area: main1;
         padding-right: 3vw;
+        padding-bottom: 3vh;
         .line{
           background-color: #2d2640;  
           width: 15%;
@@ -130,6 +131,7 @@ body{
         flex-direction: column;
         grid-area: main2;
         padding-right: 3vw;
+        padding-bottom: 3vh;
     }
     .main_text3{
         display: flex;
@@ -137,9 +139,48 @@ body{
         align-items: flex-start;
         flex-direction: column;
         grid-area: main3;
+        padding-bottom: 3vh;
     }
+}
+.banner{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 0.75fr 8.5fr 0.75fr;
+    grid-template-areas: 
+    "na banner na2"
+    ;
+    align-items: center;
+    .wrraper{
+        grid-area: banner;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        height: 80%;
+        background-color: #2d2640;
+        h3{
+            color: snow;
+            margin-left: 3vw;
+        }
+        p{
+            color: snow;
+            margin-right: 3vw;
+            border: 1.5px solid white;
+            padding-right: 1.5vh;
+            padding-left: 1.5vh;
+            padding-top: 0.3vh;
+            padding-bottom: 0.3vh; 
+        }
+    }
+
 }
 .footer{
     background-color: #fafafa;
 }
 //font-family: 'DM Serif Display', serif;
+
+@media all and (min-width: 1900px) {
+    .container{
+        height: 120vh;
+    }
+}

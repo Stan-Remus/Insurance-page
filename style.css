@@ -176,6 +176,7 @@ body {
   -ms-grid-column: 2;
   grid-area: main1;
   padding-right: 3vw;
+  padding-bottom: 3vh;
 }
 
 .main .main_text1 .line {
@@ -203,6 +204,7 @@ body {
   -ms-grid-column: 3;
   grid-area: main2;
   padding-right: 3vw;
+  padding-bottom: 3vh;
 }
 
 .main .main_text3 {
@@ -222,9 +224,64 @@ body {
   -ms-grid-row: 1;
   -ms-grid-column: 4;
   grid-area: main3;
+  padding-bottom: 3vh;
+}
+
+.banner {
+  background-color: white;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.75fr 8.5fr 0.75fr;
+      grid-template-columns: 0.75fr 8.5fr 0.75fr;
+      grid-template-areas: "na banner na2";
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.banner .wrraper {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: banner;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 80%;
+  background-color: #2d2640;
+}
+
+.banner .wrraper h3 {
+  color: snow;
+  margin-left: 3vw;
+}
+
+.banner .wrraper p {
+  color: snow;
+  margin-right: 3vw;
+  border: 1.5px solid white;
+  padding-right: 1.5vh;
+  padding-left: 1.5vh;
+  padding-top: 0.3vh;
+  padding-bottom: 0.3vh;
 }
 
 .footer {
   background-color: #fafafa;
+}
+
+@media all and (min-width: 1900px) {
+  .container {
+    height: 120vh;
+  }
 }
 /*# sourceMappingURL=style.css.map */
