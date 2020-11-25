@@ -9,7 +9,7 @@ body{
 .container{
     display: grid;
     height: 100vh;
-    grid-template-rows: 0.25fr 2fr 4fr 1fr;
+    grid-template-rows: 0.25fr 2fr 3fr 1fr 1fr;
 
 }
 .nav{
@@ -67,7 +67,7 @@ body{
         img{
             position: absolute;
             margin-top: 10vh;
-            height: 40vh;
+            height: 20vw;
             width: auto;
         }
     }
@@ -79,7 +79,7 @@ body{
         align-items: flex-start;
         flex-direction: column;
         .bar{
-            width: 10%;
+            width: 15%;
             height: 1px;
             background-color: snow;
             margin: 1vh;
@@ -91,6 +91,7 @@ body{
         }
         p{
             margin: 1vh;
+            padding-right: 3vw;
         }
         span{
             border: 1.5px solid white;
@@ -103,6 +104,40 @@ body{
 }
 .main{
     background-color: white;
+    display: grid;
+    grid-template-columns: 0.75fr 2.8fr 2.8fr 2.8fr 0.85fr;
+    grid-template-areas: 
+    "na main1 main2 main3 na2"
+    ;
+    .main_text1{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        flex-direction: column;
+        grid-area: main1;
+        padding-right: 3vw;
+        .line{
+          background-color: #2d2640;  
+          width: 15%;
+        height: 1.5px;
+        margin: 1vh;
+        }
+    }
+    .main_text2{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        flex-direction: column;
+        grid-area: main2;
+        padding-right: 3vw;
+    }
+    .main_text3{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        flex-direction: column;
+        grid-area: main3;
+    }
 }
 .footer{
     background-color: #fafafa;

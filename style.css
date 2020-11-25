@@ -12,8 +12,8 @@ body {
   display: -ms-grid;
   display: grid;
   height: 100vh;
-  -ms-grid-rows: 0.25fr 2fr 4fr 1fr;
-      grid-template-rows: 0.25fr 2fr 4fr 1fr;
+  -ms-grid-rows: 0.25fr 2fr 3fr 1fr 1fr;
+      grid-template-rows: 0.25fr 2fr 3fr 1fr 1fr;
 }
 
 .nav {
@@ -100,7 +100,7 @@ body {
 .head .head-img img {
   position: absolute;
   margin-top: 10vh;
-  height: 40vh;
+  height: 20vw;
   width: auto;
 }
 
@@ -125,7 +125,7 @@ body {
 }
 
 .head .head-text .bar {
-  width: 10%;
+  width: 15%;
   height: 1px;
   background-color: snow;
   margin: 1vh;
@@ -138,6 +138,7 @@ body {
 
 .head .head-text p {
   margin: 1vh;
+  padding-right: 3vw;
 }
 
 .head .head-text span {
@@ -150,6 +151,77 @@ body {
 
 .main {
   background-color: white;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.75fr 2.8fr 2.8fr 2.8fr 0.85fr;
+      grid-template-columns: 0.75fr 2.8fr 2.8fr 2.8fr 0.85fr;
+      grid-template-areas: "na main1 main2 main3 na2";
+}
+
+.main .main_text1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: main1;
+  padding-right: 3vw;
+}
+
+.main .main_text1 .line {
+  background-color: #2d2640;
+  width: 15%;
+  height: 1.5px;
+  margin: 1vh;
+}
+
+.main .main_text2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: main2;
+  padding-right: 3vw;
+}
+
+.main .main_text3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: main3;
 }
 
 .footer {
